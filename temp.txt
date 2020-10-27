@@ -1,0 +1,68 @@
+
+mutation{
+    createUser(
+        data:{
+            name:"Zion",
+            email:"sohn6523@gmail.com"}){
+            id
+            }
+}
+
+{
+    user(where:{
+        id:"ckgsesuw3xyxm0999hjad8n5v"
+    })
+    {
+        name
+        firstName
+        lastName
+    }
+}
+
+mutation{
+    updateUser(
+        data: { 
+            following: { 
+                connect: {
+                    id: "ckgsevfomgq6m0a26990b4ke4" }}}
+        where: {id:"ckgsesuw3xyxm0999hjad8n5v"}
+    )
+    {
+        name
+        firstName
+        lastName
+        following{
+            id
+        }
+        followers{
+            id
+        }
+    }
+}
+
+{
+    user(where:{
+        id:"ckgsesuw3xyxm0999hjad8n5v"
+    })
+    {
+        name
+        followers{
+            email
+        }
+        following{
+            email
+        }
+        lastName
+        firstName
+    }
+}
+
+{
+    allUsers {
+    id
+    firstName
+    }
+    userById(id:"ckgsesuw3xyxm0999hjad8n5v"){
+        firstName
+    }
+}
