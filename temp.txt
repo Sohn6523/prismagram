@@ -66,3 +66,20 @@ mutation{
         firstName
     }
 }
+
+
+mutation{
+    createAccount(
+            name:"bob",
+            email:"bob@gmail.com",
+            firstName: "we",
+            lastName: "you"){
+                id
+            }
+}
+
+
+
+ mutation{
+     requestSecret(email:"sohn6523@gmail.com")
+ }
