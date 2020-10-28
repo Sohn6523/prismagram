@@ -106,3 +106,4 @@ dist
 .node_modules
 generated
 prisma.yml
+temp.txt

@@ -83,3 +83,13 @@ mutation{
  mutation{
      requestSecret(email:"sohn6523@gmail.com")
  }
+
+ mutation{
+     confirmSecret(email:"sohn6523@gmail.com", secret: "scarce cheese")
+ }
+
+ mutation{
+     requestSecret(email:"sohn6523@gmail.com")
+ }
+
+{"Authorization" : "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImNrZ3Nlc3V3M3h5eG0wOTk5aGphZDhuNXYiLCJpYXQiOjE2MDM5MTk0MTB9.eIyT5bR-hQiWaNxRroX5CWIKvG8zc4OvDWQEQVlS_X" }
