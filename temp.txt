@@ -134,12 +134,9 @@ mutation{
 
 {
     me{
-        userProfile{
-            firstName
-            lastName
-            email
+        user{
+            fullName
         }
-        posts{}
     
     }
 }
