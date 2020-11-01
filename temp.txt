@@ -93,3 +93,36 @@ mutation{
  }
 
 {"Authorization" : "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImNrZ3Nlc3V3M3h5eG0wOTk5aGphZDhuNXYiLCJpYXQiOjE2MDM5MTk0MTB9.eIyT5bR-hQiWaNxRroX5CWIKvG8zc4OvDWQEQVlS_X" }
+
+mutation{
+    toggleLike(postId: "likePost")
+}
+
+mutation{
+    toggleLike(postId: "1")
+}
+
+mutation{
+    addcomment(postId: "1", text : "I Love It"){
+        id
+        text
+    }
+}
+
+{
+    searchUser(term:"zion"){
+        id
+        name
+    }
+
+    searchPost(term:"Love"){
+        id
+        caption
+        location
+    }
+}
+
+
+mutation{
+    follow(id:"ckgsesuw3xyxm0999hjad8n5v")
+}
