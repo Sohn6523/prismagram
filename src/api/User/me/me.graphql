@@ -1,0 +1,12 @@
+type ProfileResponse {
+    user: User!
+    posts: [Post!]!
+}
+
+type Query {
+    me: UserProfile!
+}
+
+type Query {
+  seeUser(id: String!): UserProfile!
+}

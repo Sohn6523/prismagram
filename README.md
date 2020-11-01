@@ -13,10 +13,10 @@ Instagram clone coding with Express Prisma React Native
 - [x] Search by location
 - [x] Follow User
 - [x] Unfollow User
-- [ ] See user profile
-- [ ] See the full photo
-- [ ] Edit my profile
-- [ ] Upload a photo
-- [ ] Edit the photo (Delete)
-- [ ] See the feed
+- [x] See user profile
+- [x] See the full photo
+- [] Edit my profile
+- [] Upload a photo
+- [] Edit the photo (Delete)
+- [] See the feed
 

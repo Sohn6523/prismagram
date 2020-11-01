@@ -126,3 +126,32 @@ mutation{
 mutation{
     follow(id:"ckgsesuw3xyxm0999hjad8n5v")
 }
+
+mutation{
+    seeUser(id:"ckgsesuw3xyxm0999hjad8n5v")
+
+}
+
+{
+    me{
+        userProfile{
+            firstName
+            lastName
+            email
+        }
+        posts{}
+    
+    }
+}
+
+{
+    seeFullPost(id: 1){
+        post{
+            location
+        }
+        comments{
+            id
+        }
+        likeCount
+    }
+}
