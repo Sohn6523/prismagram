@@ -4,6 +4,8 @@ https://us1.prisma.sh/prismagram-dev/prismagram/dev/_admin
 http://localhost:4000/
 https://app.mailgun.com/app/sending/domains/sandbox61e3cf876dc94899b2915f7988a77473.mailgun.org
 
+https://us1.prisma.sh/prismagram-dev/prismagram/dev
+
 mutation{
     createUser(
         data:{
@@ -227,6 +229,76 @@ mutation{
 muataion{
     editPost(id:3, location: "우리집")
     {
+        id
+    }
+}
+
+
+muataion{
+    editPost(
+        id:3
+        action: DELETE
+    ){
+        id
+        location
+    }
+}
+
+{
+    seeFeed{
+        id
+        caption
+    }
+}
+
+
+mutation{
+    sendMessage(
+        message: "Love",
+        to : "121212"
+    )
+    id
+}
+
+mutation{
+    sendMessage(message:"Love", to : "ckgt46p9hzedw099994z9damw"){
+        id
+    }
+}
+
+{
+    seeRoom(id:1){
+            participants {
+                id 
+                name
+                avatar
+            }
+            messages{
+            id
+            text
+        }
+    }
+}
+
+
+subscription {
+    like(where: {
+        mutation_in : CREATED
+    }) {
+        node {
+            id
+        }
+    }
+}
+mutation {
+    sendMessage{
+        roomId : 1
+        message : "dkdkdkdkk"
+    }
+}
+
+subscription {
+    newMessage(roomId:1){
         id
     }
 }
