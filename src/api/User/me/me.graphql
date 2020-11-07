@@ -1,12 +1,5 @@
-type ProfileResponse {
-    user: User!
-    posts: [Post!]!
-}
 
 type Query {
-    me: UserProfile!
+    me: User!
 }
 
-type Query {
-  seeUser(id: String!): UserProfile!
-}
